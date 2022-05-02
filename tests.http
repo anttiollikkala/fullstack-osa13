@@ -1,0 +1,126 @@
+DELETE http://localhost:3001/api/blogs/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBhbnR0aUBrdXBwaS5jb20iLCJpZCI6MSwiaWF0IjoxNjUxNDg1NzcxfQ.qJV3dvCEvRdS1WkoLvnRLMi9rI3VXFq0KuV4suOebrs
+Accept: application/json
+
+###
+GET http://localhost:3001/api/blogs
+Accept: application/json
+
+###
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+  "author": "anaconda 3",
+  "url": "sdfsdf",
+  "title": "titteli",
+  "likes": 404
+}
+
+###
+PUT http://localhost:3001/api/blogs/2
+Content-Type: application/json
+
+{
+  "likes": "asdfas"
+}
+
+###
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "name": "anaconda 9000",
+  "username": "pantti@lantti.com"
+}
+
+###
+PUT http://localhost:3001/api/users/sdfsdf
+Content-Type: application/json
+
+{
+  "username": "JEPULI"
+}
+
+###
+GET http://localhost:3001/api/users
+Accept: application/json
+
+###
+PUT http://localhost:3001/api/users/pantti@kuppi.com
+Content-Type: application/json
+
+{
+  "username": "panttieioleemail"
+}
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "pantti@lantti.com",
+  "password": "secret"
+}
+
+###
+POST http://localhost:3001/api/readinglist
+Content-Type: application/json
+
+{
+  "blogId": 1,
+  "userId": 1
+}
+
+###
+POST http://localhost:3001/api/readinglist
+Content-Type: application/json
+
+{
+  "blogId": 2,
+  "userId": 1
+}
+
+###
+POST http://localhost:3001/api/blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBhbnR0aUBsYW50dGkuY29tIiwiaWQiOjEsInNlc3Npb25JZCI6IjVjNzRmMzQyLTkwZjgtNGNlMS05MTNhLTAzYWRiMDdkYzU0MyIsImlhdCI6MTY1MTUwNzcwN30.ZqPMxquz4-slHHoOrux-GJKr-SfMcAr8bdpKiev18sk
+Content-Type: application/json
+
+{
+  "author": "Ron Bilson",
+  "url": "http://wwww.google.com/",
+  "title": "Guuggelin guure",
+  "year": 2011,
+  "likes": 1337
+}
+
+###
+POST http://localhost:3001/api/blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imx1cXBhbnR0aUBsYW50dGRpLmNvbSIsImlkIjoyLCJpYXQiOjE2NTE1MDEyNzd9.KBfrOPfLhw6XybJO0I6gG6Nzf4AMAAwmFY2VQhD93UU
+Content-Type: application/json
+
+{
+  "author": "Ron",
+  "url": "sdfsdf 333333",
+  "title": "juupeli",
+  "year": 1998,
+  "likes": 10
+}
+
+###
+PUT http://localhost:3001/api/readinglists/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imx1cXBhbnR0aUBsYW50dGRpLmNvbSIsImlkIjoyLCJpYXQiOjE2NTE1MDEyNzd9.KBfrOPfLhw6XybJO0I6gG6Nzf4AMAAwmFY2VQhD93UU
+Content-Type: application/json
+
+{
+  "read": true
+}
+
+###
+PUT http://localhost:3001/api/readinglists/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBhbnR0aUBsYW50dGkuY29tIiwiaWQiOjEsImlhdCI6MTY1MTUwMDc4Mn0.ScUFZfPcNqVGqEh0op0eoLGleSuWTu8HBkVZ0N71Pts
+Content-Type: application/json
+
+{
+  "read": true
+}
